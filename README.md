@@ -1,17 +1,9 @@
 # SCTEC
 
-## Repertório
+Repertório: `sctec`
 
-`sctec`
+Status: existente
 
-## Status
+Mão na Massa Final — padrão visual, assinatura, governança e orientação obrigatória.
 
-existente
-
-## Fase
-
-Pré-Mão na Massa — Pacote Governança encerrado.
-
-## Finalidade
-
-Organiza o repertório SCTEC como aprendizado técnico, com separação entre laboratório e produção.
+© Jus 9 Tecnologia Jurídica — software livre, autoria preservada.
