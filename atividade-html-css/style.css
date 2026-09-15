@@ -1,0 +1,513 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ========================================
+   VARIÁVEIS CSS
+======================================== */
+
+:root {
+    --cor-primaria: #0d3b66;
+    --cor-secundaria: #2a9d8f;
+    --cor-fundo: #eef2f5;
+    --cor-texto: #333333;
+    --cor-suave: #667085;
+    --branco: #ffffff;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.cabecalho {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    background-color: var(--cor-primaria);
+
+    color: var(--branco);
+
+    padding: 1rem 2rem;
+}
+
+
+#titulo-principal {
+    font-size: 1.6rem;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   MENU
+======================================== */
+
+.menu a {
+    display: inline-block;
+
+    color: var(--branco);
+
+    text-decoration: none;
+
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 0.5rem;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover,
+.menu a.ativo {
+    background-color: var(--cor-secundaria);
+}
+
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+
+.conteudo-principal,
+.pagina-perfil {
+    width: 90%;
+
+    max-width: 62.5rem;
+
+    min-height: 70vh;
+
+    margin: 2rem auto;
+
+    flex: 1;
+}
+
+
+/* ========================================
+   CARTÕES PRINCIPAIS
+======================================== */
+
+.cartao,
+.card-perfil {
+    width: 100%;
+
+    max-width: 56.25rem;
+
+    background-color: var(--branco);
+
+    border:
+        0.125rem
+        solid
+        var(--cor-secundaria);
+
+    border-radius: 1rem;
+
+    padding: 1.75rem;
+
+    margin: 0 auto;
+
+    box-shadow:
+        0
+        0.75rem
+        1.875rem
+        rgba(13, 59, 102, 0.15);
+}
+
+
+/* ========================================
+   ETIQUETA
+======================================== */
+
+.etiqueta {
+    display: inline-block;
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--branco);
+
+    padding: 0.25rem 0.75rem;
+
+    border-radius: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+
+/* ========================================
+   TÍTULO E TEXTO DO CARTÃO
+======================================== */
+
+.cartao h2 {
+    color: var(--cor-primaria);
+
+    margin-bottom: 0.75rem;
+}
+
+
+.cartao > p {
+    margin-bottom: 1.5rem;
+}
+
+
+/* ========================================
+   BOX MODEL
+======================================== */
+
+.box-model {
+    margin: 2rem 0;
+
+    text-align: center;
+}
+
+
+.camada-margin {
+    background-color: #f6bd60;
+
+    padding: 1.5rem;
+
+    border:
+        0.125rem
+        dashed
+        #e09f3e;
+}
+
+
+.camada-border {
+    background-color: #e76f51;
+
+    padding: 1.5rem;
+
+    border:
+        0.25rem
+        solid
+        #9d0208;
+}
+
+
+.camada-padding {
+    background-color: #90be6d;
+
+    padding: 1.5rem;
+
+    border:
+        0.125rem
+        dashed
+        #588157;
+}
+
+
+.camada-content {
+    background-color: var(--cor-primaria);
+
+    color: var(--branco);
+
+    padding: 1.5rem;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   AÇÕES E BOTÕES
+======================================== */
+
+.acoes {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+}
+
+
+.botao {
+    display: inline-block;
+
+    background-color: var(--cor-primaria);
+
+    color: var(--branco);
+
+    text-decoration: none;
+
+    border: none;
+
+    border-radius: 0.5rem;
+
+    padding: 0.75rem 1rem;
+
+    font: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.botao-secundario {
+    background-color: var(--cor-suave);
+}
+
+
+.botao:hover {
+    background-color: var(--cor-secundaria);
+
+    transform: translateY(-0.125rem);
+}
+
+
+/* ========================================
+   PAINEL DE CONCEITOS
+======================================== */
+
+.painel-conceitos {
+    display: flex;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+
+.painel-conceitos article {
+    flex: 1;
+
+    background-color: var(--branco);
+
+    border:
+        0.0625rem
+        solid
+        #d0d5dd;
+
+    border-radius: 0.75rem;
+
+    padding: 1rem;
+}
+
+
+.painel-conceitos h3 {
+    color: var(--cor-primaria);
+
+    margin-bottom: 0.5rem;
+}
+
+
+/* ========================================
+   PERFIL
+======================================== */
+
+.resumo-perfil {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+
+.resumo-perfil img {
+    width: 7.5rem;
+
+    height: 7.5rem;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border:
+        0.25rem
+        solid
+        var(--cor-secundaria);
+
+    flex-shrink: 0;
+}
+
+
+.apresentacao {
+    flex: 1;
+}
+
+
+.apresentacao h1 {
+    color: var(--cor-primaria);
+
+    margin-bottom: 0.5rem;
+}
+
+
+.apresentacao p {
+    margin-bottom: 1rem;
+}
+
+
+/* ========================================
+   DIVISOR
+======================================== */
+
+.divisor {
+    border: none;
+
+    border-top:
+        0.0625rem
+        solid
+        #d0d5dd;
+
+    margin: 2rem 0;
+}
+
+
+/* ========================================
+   COMPETÊNCIAS
+======================================== */
+
+.competencias h2 {
+    color: var(--cor-primaria);
+
+    margin-bottom: 1rem;
+}
+
+
+.habilidades {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 1rem;
+}
+
+
+.habilidade {
+    flex: 1;
+
+    min-width: 10rem;
+
+    background-color: var(--cor-fundo);
+
+    padding: 1rem;
+
+    border-radius: 0.75rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.habilidade strong {
+    color: var(--cor-secundaria);
+
+    font-size: 1.1rem;
+}
+
+
+.habilidade span {
+    color: var(--cor-suave);
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.rodape {
+    background-color: var(--cor-primaria);
+
+    color: var(--branco);
+
+    text-align: center;
+
+    padding: 1rem;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 43.75rem) {
+
+    .cabecalho {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .menu {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 0.5rem;
+    }
+
+
+    .resumo-perfil {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .painel-conceitos {
+        flex-direction: column;
+    }
+
+
+    .habilidades {
+        flex-direction: column;
+    }
+
+
+    .habilidade {
+        width: 100%;
+    }
+
+}
+

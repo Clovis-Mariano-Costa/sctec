@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Box Model</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <h1 id="titulo-principal">Explorando o CSS3</h1>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="index.html" class="ativo"> Box Model </a>
+
+        <a href="perfil.html"> Perfil com Flexbox </a>
+      </nav>
+    </header>
+
+    <main class="conteudo-principal">
+      <section class="cartao">
+        <span class="etiqueta"> CSS3 </span>
+
+        <h2>Entendendo o Box Model</h2>
+
+        <p>
+          Todo elemento HTML pode ser entendido como uma caixa. Essa caixa é
+          formada por conteúdo, padding, border e margin.
+        </p>
+
+        <div class="box-model" aria-label="Demonstração do Box Model">
+          <div class="camada-margin">
+            Margin
+
+            <div class="camada-border">
+              Border
+
+              <div class="camada-padding">
+                Padding
+
+                <div class="camada-content">Content</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acoes">
+          <a href="perfil.html" class="botao"> Ver perfil </a>
+
+          <a
+            href="Guia_Pratico_HTML_CSS_Compacto.pdf"
+            class="botao botao-secundario"
+            target="_blank"
+          >
+            Saiba mais
+          </a>
+        </div>
+      </section>
+
+      <section class="painel-conceitos">
+        <article>
+          <h3>Margin</h3>
+
+          <p>É o espaço externo da caixa.</p>
+        </article>
+
+        <article>
+          <h3>Border</h3>
+
+          <p>É a borda que envolve o conteúdo e o padding.</p>
+        </article>
+
+        <article>
+          <h3>Padding</h3>
+
+          <p>É o espaço interno entre o conteúdo e a borda.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Exercício de HTML e CSS</p>
+    </footer>
+  </body>
+</html>
